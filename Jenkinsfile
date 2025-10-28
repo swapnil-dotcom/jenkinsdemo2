@@ -11,9 +11,7 @@ pipeline {
                 checkout scm
             }
         }
-    }
 
-    stages {
         stage("Extract data.py") {
             bat "${env.PYTHON} extract_data.py"
         }
